@@ -1,0 +1,4 @@
+2018-01-22 12:15:48 INFO  BaseTestSetup:84 - Initialization started
+2018-01-22 12:15:54 INFO  WebDriverBase:30 - Running on Firefox driver instance....
+2018-01-22 12:15:59 INFO  WebDriverBase:40 - Launched the url.... https://www.freecrm.com/index.html
+2018-01-22 12:15:59 INFO  LoginPageTest:25 - This is to initalize test.......!

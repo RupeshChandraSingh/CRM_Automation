@@ -1,0 +1,8 @@
+2018-01-22 11:35:50 INFO  BaseTestSetup:65 - Initialization started
+2018-01-22 11:35:56 INFO  WebDriverBase:30 - Running on Firefox driver instance....
+2018-01-22 11:36:00 INFO  WebDriverBase:40 - Launched the url.... https://www.freecrm.com/index.html
+2018-01-22 11:36:00 INFO  LoginPageTest:25 - This is to initalize test.......!
+2018-01-22 11:36:00 INFO  LoginPageTest:36 - Validaating login page title. Login page title is :- #1 Free CRM for Any Business: Online Customer Relationship Software
+2018-01-22 11:36:01 INFO  LoginPageTest:46 - Validaating CRM logo. CRM logo is :- true
+2018-01-22 11:36:01 INFO  LoginPageTest:53 - Step - 1. Enter userName :- RahulRupesh and password :- Rahul123$
+2018-01-22 11:36:11 INFO  LoginPageTest:55 - Step - 2. Verify User logged in successfully!

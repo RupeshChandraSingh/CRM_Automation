@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22448" started-at="2018-01-28T12:47:12Z" finished-at="2018-01-28T12:47:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22448" started-at="2018-01-28T12:47:12Z" finished-at="2018-01-28T12:47:34Z">
+      <class name="com.crm.testcases.SignUpPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.SignUpPageTest@604ed9f0]" name="setUp" is-config="true" duration-ms="16809" started-at="2018-01-28T18:17:12Z" finished-at="2018-01-28T18:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="signUpValidation()[pri:0, instance:com.crm.testcases.SignUpPageTest@604ed9f0]" name="signUpValidation" duration-ms="4600" started-at="2018-01-28T18:17:29Z" finished-at="2018-01-28T18:17:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpValidation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.testcases.SignUpPageTest@604ed9f0]" name="teardown" is-config="true" duration-ms="996" started-at="2018-01-28T18:17:33Z" finished-at="2018-01-28T18:17:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.testcases.SignUpPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

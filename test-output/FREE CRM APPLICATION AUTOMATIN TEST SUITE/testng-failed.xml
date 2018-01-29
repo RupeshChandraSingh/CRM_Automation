@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [FREE CRM APPLICATION AUTOMATIN TEST SUITE]">
+  <test name="FREE CRM APPLICATION TEST(failed)">
+    <classes>
+      <class name="com.crm.extentreport.ExtentReportListner">
+        <methods>
+          <include name="setUP"/>
+          <include name="captureStatus"/>
+          <include name="register"/>
+          <include name="test"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.crm.extentreport.ExtentReportListner -->
+    </classes>
+  </test> <!-- FREE CRM APPLICATION TEST(failed) -->
+</suite> <!-- Failed suite [FREE CRM APPLICATION AUTOMATIN TEST SUITE] -->
