@@ -1,9 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
 <suite name="FREE CRM APPLICATION AUTOMATIN TEST SUITE">
-	<listeners>
-        <listener class-name="com.crm.extentreport.ExtentReportListner"/>
-    </listeners>
   <test name="FREE CRM APPLICATION TEST" >
     <classes>
     	

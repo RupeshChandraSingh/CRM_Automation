@@ -1,5 +1,6 @@
 package com.crm.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,7 +12,14 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.crm.utility.Utility;
 
 public class WebDriverBase 
@@ -25,6 +33,8 @@ public class WebDriverBase
 	public static String password;
 	//private static SimpleDateFormat dateFormat;
 	
+	//For Extent Report
+
 	public WebDriverBase()
 	{
 		try 

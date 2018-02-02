@@ -8,6 +8,11 @@ import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xslf.usermodel.XSLFShadow;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -24,6 +29,7 @@ public class ReadExcelData {
 	public XSSFSheet hssfSheet;
 	public XSSFRow hssfRow;
 	public XSSFCell hssfCell;
+	public Workbook workb;
 	
 	//public String excelFilePath = "F:\\Docs\\Rupesh\\testdata.xlsx";
 	
@@ -47,8 +53,12 @@ public class ReadExcelData {
 				if(hssfRow.getCell(i).getStringCellValue().trim().equals(colName.toLowerCase()))
 				colNum = i;
 			}
+			if(rowNum<1)
+			{
+				System.out.println("Invalid row num");
+			}
+			hssfRow = hssfSheet.getRow(rowNum);
 			
-			hssfRow = hssfSheet.getRow(rowNum-1);
 			hssfCell = hssfRow.getCell(colNum);
 			if(hssfCell.getCellTypeEnum() == org.apache.poi.ss.usermodel.CellType.STRING)
 			{

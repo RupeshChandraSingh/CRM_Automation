@@ -1,6 +1,9 @@
 package com.crm.testcases;
 
+import java.lang.reflect.Method;
+
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -40,7 +43,7 @@ public class LoginPageTest extends WebDriverBase
 	@Test(priority = 1)
 	public void loginPageTitleTest()
 	{
-		//extentRep.test = extentRep.reports.createTest("loginPageTitleTest");
+		//test = reports.createTest("loginPageTitleTest");
 		String loginPageTitle = loginPage.validateLoginPageTitle();
 		
 		//log.info("Validaating login page title. Login page title is :- " + loginPageTitle);
@@ -50,16 +53,16 @@ public class LoginPageTest extends WebDriverBase
 	@Test(priority = 2)
 	public void loginPageLogoTest()
 	{
-		//extentRep.test = extentRep.reports.createTest("loginPageLogoTest");
+		//test = reports.createTest("loginPageLogoTest");
 		boolean flag = loginPage.validateCRMLLogo();
-		
+		flag = false;
 		//log.info("Validaating CRM logo. CRM logo is :- " + flag);
 		Assert.assertTrue(flag);
 	}
 	@Test(priority = 3)
 	public void loginTest() throws InterruptedException 
 	{
-		//extentRep.test = extentRep.reports.createTest("loginTest");
+		//test = reports.createTest("loginTest");
 		//log.info("Step - 1. Enter userName :- " + userName + " and password :- " + password);
 		loginPage.login(userName, password);
 		//log.info("Step - 2. Verify User logged in successfully!");
@@ -67,7 +70,7 @@ public class LoginPageTest extends WebDriverBase
 	
 	@AfterMethod(alwaysRun = true)
 	public void tearDown()
-	{
+	{	
 		if(driver != null) 
 		{
 			driver.close();
